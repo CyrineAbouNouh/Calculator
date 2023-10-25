@@ -2,6 +2,7 @@ body{
     background-image: url("flower.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .calculator{
     display: grid;
@@ -30,7 +31,7 @@ body{
     justify-content: space-around;
     word-wrap: break-word;
     word-break: break-all;
-    font-size: larger;
+    font-size: 25px;
 }
 .screen .prev{
     color: rgba(255, 255, 255, .75);
@@ -52,4 +53,22 @@ button{
 button:hover{
     font-size: 25px;
     background-color: rgb(159, 175, 133);
+}
+@media (max-width: 850px)
+{
+    body{
+        background-image: url("flowerMin.jpg");
+    }
+    .calculator{
+        margin:auto;
+        margin-top: 8%;
+        min-width:90%;
+        background-color: rgba(239, 239, 243, .7);
+    }
+    .screen{
+        background-color: rgba(206, 181, 185, .7);
+    }
+    button{
+        background-color: rgba(154, 170, 129, 0.7);
+    }
 }
